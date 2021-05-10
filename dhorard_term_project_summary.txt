@@ -1,0 +1,16 @@
+This simple journaling program was created to help the user better organize their thoughts, feelings, tasks, or day to day activities. The inspiration for this project is my own desire to document important thoughts or events in my life, and while a small notebook has a finite number of pages to write in, a text document can be added to ad infinitum.
+
+The application starts by asking the user if they had an existing file they would like to add to. It only accepts yes or no answers, and once the appropriate answer is entered in the user is then prompted for the name of a file, they either like to create or add to.
+
+Try and except blocks are used to handle any errors that may occur when trying to open the file. This includes the file not being found, a file already existing when the user thinks it doesn't, and a file that they think exists when it doesn't.
+
+The main components that give this program its functionality are the datetime validator, and the add entry function. The validator function stops the user from entering incorrect datetimes, while the entry add function appends the user's entry to the file of their choosing.
+
+Through the main program, the user is asked for a datetime and entry they would like to add to the file. The validator function first checks that the user did in fact enter a valid date and time. If they did not, then an error is thrown. For the entry add function, whatever the user selects as their file of choice has the entry appended to.
+
+The entry itself then becomes an object that has methods that can return a list of the words, the number of words in the entry, and a specific word from within that entry if they enter it as an argument for a method.
+
+There is nothing that needs to be done in order to run this program. No external modules need be installed. The user must ensure that they are running the program in the same location as the existing file that they want to append an entry is. They may also choose to create a file. If that is the case, then they should remember that the file will be created in the same folder as the program itself.
+The program is useful to anyone that would like to have a structured way of entering information for later reference. It is very straightforward, and any accepts specific inputs. Be warned, if your input is incorrect, the program will notify you and terminate execution.  It is very unforgiving, but functionality can easily be added to allow for simple errors in input.
+There are many areas for improvement for this project, so any suggestions are greatly appreciated. With more work, this logic can be used for a web application down the line.
+
